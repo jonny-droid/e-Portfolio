@@ -2,8 +2,7 @@
 
 <head>
 <title>Glossary</title>
-  /* Style the buttons that are used to open and close the accordion panel */
-.accordion {
+<style>
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -26,7 +25,9 @@
   background-color: white;
   display: none;
   overflow: hidden;
-}
+  }
+  </style>
+  <script>
   var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -45,9 +46,9 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+  </script>
 </head>
 <body>
-  a
 <button class="accordion">Section 1</button>
 <div class="panel">
   <p>Lorem ipsum...</p>
