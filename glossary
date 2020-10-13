@@ -62,7 +62,35 @@
 									<header class="major">
 										<h2>Terms</h2>
 									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
+									<p></style> 
+   
+<body> 
+    <h1>GeeksforGeeks</h1> 
+    <button type="button" class="collapse"> 
+        Open Collapsible section 
+    </button> 
+      
+    <div class="text"> 
+        A Computer Science portal for geeks.  
+        It contains well written, well thought  
+        and well explained computer science and 
+        programming articles, quizzes and ... 
+    </div> 
+   
+    <script> 
+        var btn = document.getElementsByClassName("collapse"); 
+   
+        btn[0].addEventListener("click", function () { 
+            this.classList.toggle("active"); 
+            var content = this.nextElementSibling; 
+            if (content.style.display === "block") { 
+                content.style.display = "none"; 
+            } else { 
+                content.style.display = "block"; 
+            } 
+        }); 
+  
+    </script> .</p>
 								</div>
 							</section>
 
