@@ -107,7 +107,14 @@ The above is what separates Information Systems from Computer Science (CS)). CS 
 Object-Oriented programming uses a modular approach, making easier to maintain and ensure flexibility, as blocks can be reused.</p>
 A class is like a form/questionnaire. Many instances can be created from a single class.</p>
 A class is a blueprint for how something should be achieved, but contains no data itself. In the example below the class of 'dog' specifies its name and age, but does not contain the name of age of any specific dogs. 
-
+<p>
+Within relational datbases there are some analogies to OOP:
+<ul>
+<li>Classes are similar to entities</li>
+<li>States/variables are similar to attributes</li>
+<li>Inheritence and composition are similar to relatinships</li></li?>
+</ul>
+</p>
 Tips from these two weeks:
  <ul>
  <li><i>self.</i> is always the first parameter of each instance</li>
@@ -169,6 +176,42 @@ Tips from these two weeks:
 </ul>
 							
 							</section>
+<!-- five and six -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Unit 7: Database Design</h2></header>
+A database is a structured approach to data storage.</br>
+A database = operational data + a data dictionary (describes strucutre, of database, including relationships between diferent elements, access and manipulation of data).</p>
+<p>
+Three components make up a database:
+<ul>
+<li>Entities: take the form of a table</li>
+<li>Attributes: the elements that go into making up an entity (they make up a column)</li>
+<li>Relationships: how two entities are linked together. Allows us to store linked ata across several tables.</li>
+</ul>
+</p>
+One of the core elements of relational databases are primary (unique identifier in a dable) and foreign keys (a colum in one table that references another table).
+<br>
+NB: a composite key is where two fields create a unique identifer. E.g. 1st line of an address and postcode form a primary key when combine</br>
+</p>
+Normalisation aims to ensure the integrity of your database, make it more efficient and prevent issues arising</br>
+Three rules of normalisation:
+<ul>
+<li>
+1st normal form:
+<br>
+No collumns have repeated or similar data. E.g. First name, Surname, Fll name
+<br>
+Each item cannot be broken down any further (it is <b>atomic</b>)
+<br>
+Each row is uniqe, i.e. it has a primary key
+<br>
+Each field has a unique name (e.g. you not: shoes, colour, colour)
+</li>
+</ul>
+
+ 
 </div>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
