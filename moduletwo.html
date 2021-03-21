@@ -201,13 +201,22 @@ Three rules of normalisation:
 <li>
 1st normal form:
 <br>
-No collumns have repeated or similar data. E.g. First name, Surname, Fll name
+No collumns have repeated or similar data. E.g. [First name, Surname, Full name]
 <br>
-Each item cannot be broken down any further (it is <b>atomic</b>)
+Each item cannot be broken down any further (it is <b>atomic</b> (cannot be deposed further, e.g. full name can be decmposed into first name and surname))
 <br>
 Each row is uniqe, i.e. it has a primary key
 <br>
 Each field has a unique name (e.g. you not: shoes, colour, colour)
+</li>
+<li>
+2nd normal form:
+<br>
+Any table that adheres to the 1st normal form and has a simple primary key is automatically in the 2nd normal form. 
+Everything in the table should relate to the primary key (if composite primary key then all data needs to relate to both parts of this). E.g. should not have [artist, venue, style] if venue and artist are a compound primary key, as style only depends on artist.
+</li>
+<li>
+3rd normal form: there are no non-key attributes that depend on anotehr non-key attribute. I.e. a value cannot be obtained by refering to another attribute. E.g. [artist, date, city, country], [city,country] should form its own table.
 </li>
 </ul>
 
