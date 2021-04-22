@@ -47,7 +47,36 @@
 									<header class="major">
 										<h2>Sed amet aliquam</h2>
 									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
+<b>NoSQL - example of Key-Value storage</b>
+
+Using key-value NoSQL databases involves records being stored in pairs (one key to one value). A key is an arbitrary string, for example a file name. A value can be anything as short as a single number or as long as multiple lines of code (such as those stored in a .html file). The value can also be a list.
+
+According to Davoudian et al (2018) there are a range of data storage needs where a key-value relationship is the best solution. Examples of these include shopping carts and session management. where a single key is needed to access data. In these situations key-value databases are the simplest and most scalable method of storage.
+
+Key-value databases do not use queries and instead rely the following commands: “get” (i.e. retrieve key-value), “put” (i.e. add a key value) and “delete”. Filip and Cegan (2020) write that key-value databases often do not support searches based on values, and even where this is possible, if searching by value is likely required then another type of data storage is preferable.
+
+Originally key-value databases were made with the premise that each key contains one piece of data. With Redis one key can contain millions of other keys, Davoudian et al (2018) argues that this blurs the line of what a key-value database is.
+
+Weise (2015) writes that key-value stores work well as part of a wider database management system, including both SQL and noSQL storage.
+
+Diagram showing a database management system made up of SQL and noSQL
+
+
+<img src="https://jonny-droid.github.io/e-Portfolio/images/dbm.JPG">
+</br>
+Figure 15.1: a wider database management system (Wiese, 2015: 321)
+
+ 
+
+<b>References</br>
+
+Davoudian, A., Chen, L. & Liu, M. (2018) A Survey on NoSQL Stores. ACM Comput. Surv 51(2):
+1-43. https://doi.org/10.1145/3158661.
+
+Filip, P. & Cegan, L. (2020) ‘Comparison of MySQL and MongoDB with focus on performance’, International Conference on Informatics, Multimedia, Cyber and Information System (ICIMCIS). Jakarta, Indonesia, pp. 184-187. DOI: 10.1109/ICIMCIS51567.2020.9354307.
+
+Wiese, L. (2015) Advanced Data Management : For SQL, NoSQL, Cloud and Distributed Databases. Berlin: De Gruyter. Available from: https://ebookcentral.proquest.com/lib/bcu/detail.action?docID=4179774 [Accessed 30 March 2021].
+
 								</div>
 							</section>
 
