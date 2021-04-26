@@ -91,7 +91,7 @@ Shelly et al (2016) suggested three core parts of an information system:</br>
 </br>
 It has been suggested that communications should be added to the above. However, technically, Networking belongs in both Hardware and Software.
 </p>
-The above is what separates Information Systems from Computer Science (CS)). CS is one part of Information Systems.
+The above is what separates Information Systems from Computer Science Computer Science (CS). CS is one part of Information Systems.
 </div>						
 </section>
 							
@@ -122,7 +122,7 @@ Tips from these two weeks:
  <ul>
  <li><i>self.</i> is used as the first parameter of each instance</li>
  <li>can use <i>pass</i> as a placeholder after defining the class.</li>
- <li>Underscores behind the name of a variable, can be used to demonstrate in the code that this should be hidden (essentially a note to developers), e.g. self._example</li></ul>
+ <li>Underscores behind the name of a variable can be used to demonstrate in the code that this should be hidden (essentially a note to developers), e.g. self._example</li></ul>
  
  
  </p>
@@ -148,13 +148,13 @@ Key terms to look at in the <a href="glossary.html">Glossary</a>:
 <b><a href="https://jonny-droid.github.io/e-Portfolio/oopunit5-6.html">Please see here for the artifacts</a></b></br>	
 UML is an industry standard method for graphically showing the artifacts of a software system. 
 </br>This is used to save time and costs when creating and modifying information systems.</br> 
-It also also means it is possible to gain a high level overview of a system to see if it meets the specification.</br>
+It also means it is possible to gain a high level overview of a system to see if it meets the specification.</br>
 UML can be static (shows structure e.g. class diagram) or dynamic (showing a behaviour, e.g. a sequence diagram).</br>
 Class diagrams are one of the most commonly used forms of UML diagram.
 </p>
 Tips from these two weeks:
  <ul>
- <li>A scenario is a sequence of steps desciribing hte interaction between a user and the system</li>
+ <li>A scenario is a sequence of steps describing the interaction between a user and the system</li>
  <li>Abstract class: only exists to be inherited (opposite of concrete class)</li>
   <li>Actors are people or systems who interact with the subject</li>
   <li>Functional requirements are what the system must and must not do (e.g. adds customers). 
@@ -176,41 +176,41 @@ Tips from these two weeks:
 				<b><a href="https://jonny-droid.github.io/e-Portfolio/PDFs/DatabaseNormalisation.pdf">Please see here for the artifacts</a></b></br>
 
 A database is a structured approach to data storage.</br>
-A database = operational data + a data dictionary (describes strucutre, of database, including relationships between diferent elements, access and manipulation of data).</p>
+A database = operational data + a data dictionary (describes the structure of a database, including relationships between diferent elements, access and manipulation of data).</p>
 <p>
 Three components make up a database:
 <ul>
 <li>Entities: take the form of a table</li>
 <li>Attributes: the elements that go into making up an entity (they make up a column)</li>
-<li>Relationships: how two entities are linked together. Allows us to store linked ata across several tables.</li>
+<li>Relationships: how two entities are linked together. Allows us to store linked data across several tables.</li>
 </ul>
 </p>
-One of the core elements of relational databases are primary (unique identifier in a dable) and foreign keys (a colum in one table that references another table).
+One of the core elements of relational databases are primary keys (a unique identifier in a table) and foreign keys (a column in one table that references another table).
 <br>
-NB: a composite key is where two fields create a unique identifer. E.g. 1st line of an address and postcode form a primary key when combine</br>
+NB: a composite key is where two fields create a unique identifer. E.g. 1st line of an address and postcode form a primary key when combined</br>
 </p>
-Normalisation aims to ensure the integrity of data and gets rid of redudnant data through stopping multiple copies of the same attribute=</br>
+Normalisation aims to ensure the integrity of data and gets rid of redundant data through stopping multiple copies of the same attribute=</br>
 Three rules of normalisation:
 <ul>
 <li>
 1st normal form:
 <br>
-No collumns have repeated or similar data. E.g. [First name, Surname, Full name]
+No columns have repeated or similar data. E.g. [First name, Surname, Full name]
 <br>
-Each item cannot be broken down any further (it is <b>atomic</b> (cannot be deposed further, e.g. full name can be decmposed into first name and surname))
+Each item cannot be broken down any further (it is <b>atomic</b> (cannot be deposed further, e.g. full name can be decomposed into first name and surname))
 <br>
-Each row is uniqe, i.e. it has a primary key
+Each row is unique, i.e. it has a primary key
 <br>
-Each field has a unique name (e.g. you not: shoes, colour, colour)
+Each field has a unique name (e.g. not: shoes, colour, colour)
 </li>
 <li>
 2nd normal form:
 <br>
 Any table that adheres to the 1st normal form and has a simple primary key is automatically in the 2nd normal form. 
-Everything in the table should relate to the primary key (if composite primary key then all data needs to relate to both parts of this). E.g. should not have [artist, venue, style] if venue and artist are a compound primary key, as style only depends on artist.
+Everything in the table should relate to the primary key (if it's composite primary key then all data needs to relate to both parts of this). E.g. should not have [artist, venue, style] if venue and artist are a compound primary key, as style only depends on artist.
 </li>
 <li>
-3rd normal form: there are no non-key attributes that depend on anotehr non-key attribute. I.e. a value cannot be obtained by refering to another attribute. E.g. [artist, date, city, country], [city,country] should form its own table.
+3rd normal form: there are no non-key attributes that depend on another non-key attribute. I.e. a value cannot be obtained by refering to another attribute. E.g. [artist, date, city, country], [city,country] should form its own table.
 </li>
 </ul>
 
@@ -223,7 +223,7 @@ Everything in the table should relate to the primary key (if composite primary k
 									<header class="major">
 										<h2>Unit 8: Hands on with Database Design </br>Unit 9: Implementing Database with SQL</br> Unit 10: Working with SQL</h2></header>
 <b><a href="https://jonny-droid.github.io/e-Portfolio/oopunit8-10.html">Please see here for the artifacts</a></b></br> 
-An Entity Relationships Diagram (ERD) is a visual way of showing how parts of a databse relate to each other (e.g. different tables/columns may have a none to many, zero to many etc... relationship).</br>
+An Entity Relationship Diagram (ERD) is a visual way of showing how parts of a database relate to each other (e.g. different tables/columns may have a none to many, zero to many etc... relationship).</br>
 <p>
 Using data from multiple tables requires either 'join' or subqueries (referencing more than one table). One option is not intrinsically better than the other.
 </br>
@@ -231,25 +231,25 @@ Using data from multiple tables requires either 'join' or subqueries (referencin
 <p>
 <h3>Big data and NoSQL</h3>
 Big Data: a field looking at how we can handle the huge amount of data we generate as a society</br>
-The main features of Big Dat are:
+The main features of Big Dats are:
 <ul>
 <li>The large amount of data</li>
-<li>The speed that it is speed generated</li>
+<li>The speed that it is generated</li>
 <li>The fact much of it is unstructured and difficult to store in a table</li>
 <li>Questions about the accuracy and trustworthiness of the data</li>
 </ul>
 NoSQL (Not only SQL) is associated with Big Data. NoSQL is not a single technology, but an umbrella term for database technologies which are flexible, scalable and fast - and are particlarly appropriate for Big Data.</br>
-NoSQL is not limitedt to storing data in columns or having conformity across rows.
+NoSQL is not limited to storing data in columns or having conformity across rows.
 
-Where database integrity is important, for example with payment systems, then may wish to rely on SQL.
+Where database integrity is important, for example with payment systems, then it may be preferable to rely on SQL.
 NoSQL is often part of a wider database management system, including both SQL and noSQL storage.
 
 There are four types of NoSQL databases (not all NoSQL database types fit neatly within these categories):
 <ul>
 <li>Key-Value: records being stored in pairs (one key to one value). A key is an arbitrary string, for example a file name. A value can be anything as short as a single number or as long as multiple lines of code (such as those stored in a .html file). The value can also be a list.
 </li>
-<li>Document: each record stored in a document. For example, a medical patietn record documenting everything</li>
-<li>Wide-column: columns can vary from row to row. Tables can be created, adjusted and dropped whilst runnin a query</li>
+<li>Document: each record stored in a document. For example, a medical patient record documenting everything</li>
+<li>Wide-column: columns can vary from row to row. Tables can be created, adjusted and dropped whilst running a query</li>
 <li>Graph: uses nodes instead of tables.</li>
 </ul>
 
@@ -267,10 +267,10 @@ This is a way of thinking about software logic.</br>
 The Model represents the data (and nothing else), the View what data is displayed to the user, and the Controller acts between the Model and View (by interpreting user inputs).
 </p>
 Web frameworks:</br>
-A framework is a directly containing resources such as libraries, reference documentation, database access etc… that has already been developed to help you develop your application. Reusable code provides functionality within your programmes. It’s essentially so that you can avoid needing to reinvent the wheel.
-Every programming language has its own frameworks (for example JQuery and Javascript).
+A framework is a directory containing resources such as libraries, reference documentation, database access etc… that has already been developed to help you develop your application. Reusable code provides functionality within your programmes. It’s essentially so that you can avoid needing to reinvent the wheel.
+Every programming language has its own frameworks (for example JQuery for Javascript).
 A web framework includes a built in server and the delegation of responsibility for various parts of your application. It will automate implementation for various common solutions, such as  HTTPS request handling.
-Flask is an example of Python web framework (Django is another common example). Flaks offers templating. A template mostly contains HTML, however when you want to add any dynamic behaviour to a webpage you use Jinja.
+Flask is an example of Python web framework (Django is another common example). Flask offers templating. A template mostly contains HTML, however when you want to add any dynamic behaviour to a webpage you use Jinja.
 <P>
 Malicious code injections:</br>
 In the case of an SQL injection, this sends untrusted code to the web server, e.g. through someone entering SQL code into the URL to fool the web server.
@@ -286,7 +286,7 @@ In the case of an SQL injection, this sends untrusted code to the web server, e.
 									<header class="major">
 										<h2>Unit 12: The Future of Information Systems</h2></header>
 <b><a href="https://jonny-droid.github.io/e-Portfolio/oopunit12.html">Please see here for the artifacts</a></b></br> 
-This unit related specifically to security and privacy issues. Included in these were:
+This unit related to security and privacy issues. Included in these were:
 <ul<>
 <li>Human factors in security threat</li>
 <li>Crytography</li>
