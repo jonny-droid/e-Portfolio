@@ -402,15 +402,62 @@ Key terms to look at in the <a href="glossary.html">Glossary</a> for this unit:
 							<section id="Two">
 								<div class="inner">
 									<header class="major">
-										<h2>Placeholder</h2>
+										<h2>Unit 5: An Introduction to Testing</br>
+										Unit 6: Using Linters to Support Python Testing</h2>
 									</header>
+Validation is the ability to fulfil the customers need. Verification is the ability to fulful the defined specification. Both are needed, but sometimes only one of these is met.
+<p>
+Quality assurance testing is the process of ensuring the quality of the software being released.
+</p>
+Developing a test plan includes:
+<ul>
+<li>What type of testing</li>
+<li>What needs testing and when</li>
+</ul>
+<p>
+White-box testing looks at the structure of the code. It invovles the internal system being known to the tester. An example of this is unit testing. These structural based test (i.e. they consider the structure of the system).
+<br>
+Black-box testing looks at the overall functionality (for example equivalency or use-case testing). Can start designing black-box testing before the code is even written. These are specification based  (i.e. the tester can find missing functionalities).
+</p>
+There are many benefits of automating testing. Some areas cannot be automated easily, for example user-acceptability testing.
 
 </p>
-Key terms to look at in the <a href="glossary.html">Glossary</a> for this unit:
+There are various approaches to testing (it is good practice to include as many of these as possible):
+
 <ul>
-
-
+<li>Functional testing: customer requirements from the specification have been fulfilled.</li>
+<li>Usability testing: a user evaluates the system.</li>
+<li>Compatability testing: works on different hardware and softare platforms.</li>
+<li>Regression testing: changes to the system have not stopped a compenant working.</li>
+<li>Acceptance testing: will the system fuilfill the user requirments enough for them to accept it (can involves the developer working with the customer).</li>
+<li>Performance testing: does it meet perfrmances requirements (for example load or stress testing).</li>
+<li>Big bang testing: testing the system as a whole</li>
+</p>
+Security related approach:
+<ul>
+Vulnerability assessment and penetration testing. The former helps us to determine where we need to do penetration testing (which is the simulation of an attack/putting a system under pressure))
 </ul>
+<p>
+Testing can also be divided into dynamic (carried out while the code is being run) and static (based upon the internal structure of the software). These work well together, with the latter validating the findings of the former.
+</p>
+Experience-based testing involves the tester using their knowledge to guess where erros may exist.
+<p>
+MC/DC: testing only important combinations??????
+</p>
+Linters: a lint is a small mistake in code. A linter helps to indentify these. Most IDEs run these in the background. Some are language indpendent and some are specific. Python specific examples include Flake8 and PyLint.
+</p>
+Reflection of knowledge from this week: linter based learning. Testing self through 
+
+
+Key terms to look at in the <a href="glossary.html">Glossary</a> for this unit [note to self - these still need adding]:
+<ul>
+<li>Cyclometric complexity</li>
+<li>Poison package</li>
+<li>Testability</li>
+</ul>
+
+
+
 								</div>
 							</section>
 											<!-- Main -->
@@ -538,6 +585,12 @@ Key terms to look at in the <a href="glossary.html">Glossary</a> for this unit:
 </p>
 References:
 Pillai, A.B. (2017) Software Architecture with Python. Birmingham, UK. Packt Publishing Ltd.
+
+<p>
+Include somewhere:
+Monolith and microservices have very different attack surfaces.
+</p>
+
 
 										</div>
 </section>
