@@ -494,7 +494,7 @@ There are four main functions of an OS:
 <li>Abstraction and virtualisation (commonly used in virutal hosting environments). This may include:
 <ul>
 <li>Simulating hardware functionality (i.e. creating a virtual system from a single server)</li>
-<li>OS virtualisation: software to allow a piece of hardware to run multiple OSs</li>
+<li>OS virtualisation: software to allow a piece of hardware to run multiple OSs (can also reer to virtual machines sharing an operating system, rather than each having their own OS (which can be seen as inefficient)</li>
 </ul>
 </li>
 <li>Services (for example a print service involving spooling data) and security </li>
@@ -517,12 +517,15 @@ Secure proctocols (HTTPS) usually use Public Key Infrastructure (PKI). This incl
 </br>
 Figure 2: An image showing how PKI works (drawn by myself)
 <p>
-As well as keys, the other part of PKI are SSL certificates. This is how I know that it was really the server who sent me their public key, and not someone else pretending to be them (and sending their own public key). 
+As well as keys, the other part of PKI are SSL/TLS certificates. This is how I know that it was really the server who sent me their public key, and not someone else pretending to be them (and sending their own public key). 
 To ensure this we need digital certificats. These are usually issues by certified public authorities (who are also able to revoke certificates).
 </p>
 Other information from this unit included:
 <ul>
-<li></li>
+<li>The need for audits</li>
+<li>Problem of legancy</li>
+<li>The use of proxy</li>
+<li>Firewalls</li>
 </ul>
 </p>
 Key terms to look at in the <a href="glossary.html">Glossary</a> for this unit:
