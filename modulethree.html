@@ -510,14 +510,20 @@ The kernel is responsible for:
 <li>Managing memory</li>
 <li>Process/task management (when a programme runs we call it a process)</li>
 </ul>
-Secure proctocols (HTTPS) usually use Public Key Infrastructure (PKI). This is:
+Secure proctocols (HTTPS) usually use Public Key Infrastructure (PKI). This includes the swapping of public keys between the two parties (private keys are never swapped). Public and private keys are related through a very complicated mathematical relationship. 
 
 <p>
 <img src="https://jonny-droid.github.io/e-Portfolio/images/PKI.JPG">
 </br>
 Figure 2: An image showing how PKI works (drawn by myself)
-
-
+<p>
+As well as keys, the other part of PKI are SSL certificates. This is how I know that it was really the server who sent me their public key, and not someone else pretending to be them (and sending their own public key). 
+To ensure this we need digital certificats. These are usually issues by certified public authorities (who are also able to revoke certificates).
+</p>
+Other information from this unit included:
+<ul>
+<li></li>
+</ul>
 </p>
 Key terms to look at in the <a href="glossary.html">Glossary</a> for this unit:
 <ul>
