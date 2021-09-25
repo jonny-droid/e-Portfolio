@@ -482,13 +482,23 @@ There are four main functions of an OS:
 	<li>Command Line Interface (CLI)</li>
 	<li>API (providing an interface for other programmes)</li>
 	<li>Device Drivers</li>
-	</ul>
-	
-<li>Resource management and scheduling: such as CPU, memory and file systems (please see the below information on the kernel)</li>
-<li>Abstraction and virtualisation (see glossary)</li>
+	</ul></li>
+
+<li>Resource management and scheduling
+<ul>
+<li>CPU</li>
+<li>Memory and file systems</li>
+<li> (please see the below information on the kernel)</li>
+</ul>
+</li>
+<li>Abstraction and virtualisation (commonly used in virutal hosting environments). This may include:
+<ul>
+<li>Simulating hardware functionality (i.e. creating a virtual system from a single server)</li>
+<li>OS virtualisation: software to allow a piece of hardware to run multiple OSs</li>
+</ul>
+</li>
 <li>Services (for example a print service involving spooling data) and security </li>
 </ul>
-
 
 
 The kernel is the core of the OS. It is the first programme to load when the system starts and is stored in memory
@@ -500,11 +510,13 @@ The kernel is responsible for:
 <li>Managing memory</li>
 <li>Process/task management (when a programme runs we call it a process)</li>
 </ul>
-
+Secure proctocols (HTTPS) usually use Public Key Infrastructure (PKI). This is:
 </p>
 Key terms to look at in the <a href="glossary.html">Glossary</a> for this unit:
 <ul>
-
+<li>Time-sharing</li>
+<li>GNU project</li>
+<li>Managed memory</li>
 
 </ul>
 								</div>
@@ -616,6 +628,9 @@ Key terms to look at in the <a href="glossary.html">Glossary</a> for this unit:
 </p>
 References:
 Pillai, A.B. (2017) Software Architecture with Python. Birmingham, UK. Packt Publishing Ltd.
+<br>
+Saltzer, J. & Schroeder, M. (1975) The Protection of Information in Computer Systems. Proceedings of the IEEE 63(9): 1278-1308.
+
 
 <p>
 Include somewhere:
