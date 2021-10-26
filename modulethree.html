@@ -533,8 +533,9 @@ These still seem relevant, espeically:
 <li>Psychological acceptability: should be intuitive and designed for ease of use.</li>
 </ul>
 </p>																	
-Secure proctocols (e.g. HTTPS) usually use Public Key Infrastructure (PKI). This includes the swapping of public keys between the two parties (private keys are never swapped). Public and private keys are related through a very complicated mathematical relationship. 
-
+Secure proctocols (e.g. HTTPS) usually use Public Key Infrastructure (PKI). 
+This includes the swapping of public keys between the two parties (private keys are never swapped).
+Public and private keys are related through a very complicated mathematical relationship. 
 <p>
 <img src="https://jonny-droid.github.io/e-Portfolio/images/PKI.JPG">
 </br>
@@ -542,6 +543,9 @@ Figure 2: An image showing how PKI works (drawn by myself)
 <p>
 As well as keys, the other part of PKI are SSL/TLS certificates. This is how I know that it was really the server who sent me their public key, and not someone else pretending to be them (and sending their own public key). 
 To ensure this we need digital certificats. These are usually issues by certified public authorities (who are also able to revoke certificates).
+</p>
+Another type of encryption exists within Computer Science. This is symetric encryption. This is hwere a sender/receiver share a single encryption and decryption key.
+This must be kept secret from everyone else.
 </p>
 Other information from this unit included:
 <ul>
@@ -566,7 +570,7 @@ Key terms to look at in the <a href="glossary.html">Glossary</a> for this unit:
 							<section id="Two">
 								<div class="inner">
 									<header class="major">
-										<h2>Placeholder</h2>
+										<h2>Unit 9: Developing an API for a Distributed Environment</h2>
 									</header>
 
 </p>
@@ -582,7 +586,53 @@ Key terms to look at in the <a href="glossary.html">Glossary</a> for this unit:
 							<section id="Two">
 								<div class="inner">
 									<header class="major">
-										<h2>Placeholder</h2>
+										<h2>Unit 10: From Distributed Computing to Microarchitectures</h2>
+									</header>
+<b>Monlithic Architecture:</b></br>
+A single software product, that will usually grow over time. Works well with small applications and small teams.
+Disadvantages include that it has a low fault tolerrance, difficult to update and an issue with one
+part of the system can cause the whole to fail.
+</p>
+<b>Distributed systems:</b></br>
+A colletion of individual compoenants located on different machines. Working together to achieve a common goals.
+</br>
+A microservice architecture is becoming increasingly common. This is where applications are developed as several
+small independent suites. For example, a system might have a user interface, stock control, shipping etc...
+Many buisiness use microservices. They are organised around business capactilities, with each providing a different
+function. Communication between systems may be achieved via https. An API gateway is used by the client to access
+the microservice capability.
+</p>
+Advantages include:
+<ul>
+<li>It works well with an agile approach to development.</li>
+<li>Utilises small specialist teams.</li>
+<li>Can use different technologies for different services, depending on the expertise within each team.</li>
+<li>A failure of one microservice will not mean that the application is unusable.</li>
+</ul>
+One disadvantage is that the attack surfaces of the application are increased.
+For example data being stored in different places increase the attack surfaces.
+
+<br>Increases attack surfaces as for example data is stored at multiple locations.
+<br>For then end-user there is not difference between the above.
+
+</p>
+Key terms to look at in the <a href="glossary.html">Glossary</a> for this unit:
+<ul>
+<li>Ontology </li>
+<li>Service Oriented Architectures</li>
+<li>Hypervisor</li>
+
+</ul>
+								</div>
+							</section>
+											<!-- Main -->
+					<div id="main">
+
+						<!-- two -->
+							<section id="Two">
+								<div class="inner">
+									<header class="major">
+										<h2>Unit 11: Future trends in Secure Software Development</h2>
 									</header>
 
 </p>
@@ -600,25 +650,7 @@ Key terms to look at in the <a href="glossary.html">Glossary</a> for this unit:
 							<section id="Two">
 								<div class="inner">
 									<header class="major">
-										<h2>Placeholder</h2>
-									</header>
-
-</p>
-Key terms to look at in the <a href="glossary.html">Glossary</a> for this unit:
-<ul>
-
-
-</ul>
-								</div>
-							</section>
-											<!-- Main -->
-					<div id="main">
-
-						<!-- two -->
-							<section id="Two">
-								<div class="inner">
-									<header class="major">
-										<h2>Placeholder</h2>
+										<h2>Unit 12: The Great Tanenbaum-Torvalds Debate Revisited</h2>
 									</header>
 
 </p>
