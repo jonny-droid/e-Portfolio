@@ -47,55 +47,40 @@
 									<header class="major">
 										<h2>Artifacts for unit 1</h2>
 									</header>
-<h3>My contribution to the collaborative discussion</h3>
-									<p>
-    Incident:
-</p>
-<p>
-    On 12th May 2017 34 National Health Service (NHS) trusts became infected by
-    the WannaCry ransomware attack. This malware encrypted files, requesting
-    users to pay in bitcoin to unlock their device. Staff were locked out of
-    key information systems, including those used to store and retrieve patient
-    medical records and those used for accessing and using medical equipment
-    (such as MRI scanners). The NHS Trusts responded by shutting down their
-    networks, suspending email, and denying access to external links. Staff
-    resorted to notetaking on paper and lacked patient records to refer to.
-    This took several hours to restore.
-</p>
-<p>
-    The cause of this was:
-</p>
+<h3>My initial post</h3>
+<p>Cross site scripting</span></p>
+<p>This post looks at OWASP A1:2017-Injection (OWASP, 2020). The activity diagram specifically demonstrates reflected Cross-Site Scripting (XSS). 
+This is a client-side attack where a hacker constructs a custom URL which executes JavaScript in the victim&rsquo;s browser. 
+This can be used to carry out an action or to send data to the hacker (Ambedkar and Ambedkar 2016).</p>
+<p>Other examples of cross-site scripting includes (Dora and Nemoga, 2021):</p>
 <ul>
-    <li>
-        Failure at the hardware component of NHS information systems (using
-        devices running Windows XP after this was no longer supported).
-    </li>
-    <li>
-        Failed cyber security practices/procedures. Even though XP was no
-        longer supported, Windows released a security fix for the vulnerability
-        exploited by WannaCry. The effected NHS Trusts had not implemented this
-        security patch.
-    </li>
-    <li>
-        Possible inadequacies within the relevant networks allowed the malware
-        to spread to other connected devices.
-    </li>
+<li>Dom based XSS: attackers add malicious code to a webpage. This is a client-side attack. Dora and Nemoga (2021) state that some authors regard this as a type of reflected attack, 
+however it does not include any data being sent to the server.</li>
+<li>Stored/persistent XSS: attackers store malicious code on a website&rsquo;s database. This is often accomplished through a search field, with a hacker adding 
+Javascript/HTML into a search box or form. This is a server-side attack.</li>
 </ul>
-<p>
-    Consequences:
-</p>
-<p>
-    Due to not being able to access key NHS information systems and equipment:
-</p>
+<p>Rodriguez et al (2020) list some methods to prevent cross-site scripting:</p>
 <ul>
-    <li>
-        19,000 appointments were cancelled
-    </li>
-    <li>
-        The cost to the impacted NHS trusts was estimated to be over £10
-        million.
-    </li>
+<li>Blacklist certain user inputs, for example &ldquo;&lt;&rdquo; and &ldquo;&gt;&rdquo;</li>
+<li>Escaping characters so code is interpreted as text and not run.</li>
+<li>Using open sources XSS libraries.</li>
+<li>Tools exist that can be used to automatically detect cross site scripting vulnerabilities (OWAST 2021). OWAST lists nine of these.</li>
 </ul>
+<b><a href="https://jonny-droid.github.io/e-Portfolio/PDFs/activityDiagram.pdf">My UMLs available here.</a>
+
+
+
+https://jonny-droid.github.io/e-Portfolio/PDFs/umlSupermarket.pdf
+
+<p><span>References</span></p>
+<p>Ambedkar, M. &amp; Ambedkar, N. (2016) A comprehensive inspection of cross site scripting attack. 2016&nbsp;<em>International Conference on Computing, Communication and Automation (ICCCA)</em>. 497-502. DOI: 1109/CCAA.2016.7813770.</p>
+<p>Dora, J. &amp; Nemoga, K. (2020). Ontology for Cross-Site-Scripting (XSS) Attack in Cybersecurity.&nbsp;<em>Journal of Cybersecurity and Privacy</em>&nbsp;1(2). 319-339. DOI:&nbsp;<a href="https://doi.org/10.3390/jcp1020018">https://doi.org/10.3390/jcp1020018</a>.</p>
+<p>OWASP (2020) OWASP Top Ten. Available from:&nbsp;<a href="https://owasp.org/www-project-top-ten/">https://owasp.org/www-project-top-ten/</a>&nbsp;[accessed 22nd August 2021]</p>
+<p>OWASP (2021) Vulnerability Scanning Tools. Available from:&nbsp;<a href="https://owasp.org/www-community/Vulnerability_Scanning_Tools">https://owasp.org/www-community/Vulnerability_Scanning_Tools</a>&nbsp;[accessed 22nd August 2021].</p>
+<p>Rodriguez, G., Torres, J., Flores, P. &amp; Benavides, D. (2020) Cross-site scripting (XSS) attacks and mitigation: A survey.&nbsp;<em>Computer Networks</em>&nbsp;166. DOI:&nbsp;<a href="https://doi.org/10.1016/j.comnet.2019.106960">https://doi.org/10.1016/j.comnet.2019.106960</a>.&nbsp;</p>
+
+
+
 <p>
     References
 </p>
