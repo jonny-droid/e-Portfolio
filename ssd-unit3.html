@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+													<li><a href="index.html">Home</a></li>
+							<li><a href="glossary.html">Glossary</a></li>
+							<li><a href="moduleone.html">Launching into Computer Science</a></li>
+							<li><a href="moduletwo.html">Object-oriented Information Systems</a></li>
+							<li><a href="index.html">Secure Software Development</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Artifact for unit 3</h2>
+									</header>
+<h2>Team Discussion</h2>
+<h3>What is a secure programming language?</span></h3>
+<p><strong>1) What factors determine whether a programming language is secure or not?</strong></p>
+<p>A perfect language would contain no buffer errors, no injection errors and no information leakage. No mainstream language can guarantee this. Some languages however may promote better security practices than others and minimise the ability for developers to write insecure code.</p>
+<p>Where external packages/modules are used there is a certain amount of trust involved. However, there are libraries that exist to help check these.</p>
+<p><strong>2) Could Python be classed as a secure language? Justify your answer.</strong></p>
+<p>No in the sense that no language can be classed as secure.</p>
+<p><strong>Console vulnerabilities</strong></p>
+<p>Python 2 had certain vulnerabilities that Python 3 fixed. Python 3 converts inputs to strings. However, Python 2 does an eval() meaning that it executes a command for the input. This can be gotten around by using <em>raw_input</em>.</p>
+<p><strong>Buffer overflow attack</strong></p>
+<p>Buffer overflow &ndash; where data exceeds the amount of allocated memory to a specific point is caused when the application fails to check for the length of the input. Boundary checking on variable-length input helps to mitigate this. C and C++ are particularly vulnerable to this as their functions do not effectively check for boundaries.</p>
+<p>A buffer is a temporary data storage area that has a limited space allocated for any single task. Programming should be written with error checking to make sure that the buffer receives the right type and right amount of data.</p>
+<p>A buffer overflow occurs when an input given to an application exceeds the allocated buffer memory. The input is accepted and overwrites other data, crashes the program or can be used for data leakage.</p>
+<p>Python3 is better than Python2 for manging memory and returning errors.</p>
+<p>&nbsp;</p>
+<p><strong>Server-side vulnerabilities</strong></p>
+<p>SSTI (server-side template injection). This is possible in Python web frameworks.</p>
+<p>DDOS attacks. Can happen with Python web frameworks where arithmetical expressions are passed to the server causing it to crash.</p>
+<p>SQL injection (is possible when Python is connected to MySQL through a connector). Need to use strategies to make sure output is escaped.</p>
+<p>Most security issues are due to precautions not being taken. The developer needs to make sure that file descriptions are closed, passwords do not compare original data in memory but use strong password hashing libraries with in-built SALT and a fixed number of hashing rounds.</p>
+<p>The developer needs to make sure that sensitive data is encrypted, and that the system up to date</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>3) Python would be a better language to create operating systems than C. Discuss.</strong></p>
+<p>Python is not ideal as too high level. Could not access hardware. Needs an interpreter.</p>
+<p>&nbsp;</p>
+<p>Could use some type of compiler to convert Python into assembly language (we were not sure if this would this would just convert Python to C). Python might be a better language when someone need to develop an operating system quickly without need for performance, or does not know C.</p>
+<p>We discussed the use of Safety (a package to scan for threats in external libraries) and bandit&nbsp;scans your code for well-known vulnerabilities (a type of security linter).</p>

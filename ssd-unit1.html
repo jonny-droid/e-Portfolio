@@ -66,7 +66,7 @@ Javascript/HTML into a search box or form. This is a server-side attack.</li>
 <li>Using open sources XSS libraries.</li>
 <li>Tools exist that can be used to automatically detect cross site scripting vulnerabilities (OWAST 2021). OWAST lists nine of these.</li>
 </ul>
-<b><a href="https://jonny-droid.github.io/e-Portfolio/PDFs/activityDiagram.pdf">My UMLs available here.</a></b>
+<b><a href="https://jonny-droid.github.io/e-Portfolio/PDFs/activityDiagram.pdf">My UML is  available here.</a></b>
 
 
 <p><h2>References</h2>
@@ -76,3 +76,18 @@ Javascript/HTML into a search box or form. This is a server-side attack.</li>
 <p>OWASP (2020) OWASP Top Ten. Available from:&nbsp;<a href="https://owasp.org/www-project-top-ten/">https://owasp.org/www-project-top-ten/</a>&nbsp;[accessed 22nd August 2021]</p>
 <p>OWASP (2021) Vulnerability Scanning Tools. Available from:&nbsp;<a href="https://owasp.org/www-community/Vulnerability_Scanning_Tools">https://owasp.org/www-community/Vulnerability_Scanning_Tools</a>&nbsp;[accessed 22nd August 2021].</p>
 <p>Rodriguez, G., Torres, J., Flores, P. &amp; Benavides, D. (2020) Cross-site scripting (XSS) attacks and mitigation: A survey.&nbsp;<em>Computer Networks</em>&nbsp;166. DOI:&nbsp;<a href="https://doi.org/10.1016/j.comnet.2019.106960">https://doi.org/10.1016/j.comnet.2019.106960</a>.&nbsp;</p>
+
+
+<h2>My Summary post</h2>
+<p>During the first unit we covered the Software Development Lifecycle (SDLC), the difference between architecture and design (including reference to TOGAF), predictive (waterfall) and adaptive (agile) software methodologies, and we looked at some of the relevant standardisation bodies. OWASP&rsquo;s top ten security vulnerabilities for web applications were explored. I wrote my initial post based on OWASP (2020) A1:2007-injection and A7:2007- Cross-Site Scripting XSS (focussing on cross-site scripting attacks (XSS)). I had some valuable feedback stating that one potential solution to XSS attacks (using open source XSS libraries) can also come with security threats. This could mean the packages themselves execute malicious script (there is often a lack of moderation within software language libraries) (Lakshmanan, 2021).</p>
+<p>I also received useful feedback on my UML. Where I had a decision box stating &ldquo;the website has a way to mitigate threats, for example escaping character&rdquo;, I would better to use a more definitive questions such as &ldquo;does the website use escaping character?&rdquo;. The former statement leaves an open-ended number of potential methods of mitigation and lacks detail. This made me think that I could add another decision box asking if the web application blacklists certain characters such as &ldquo;&lt;&rdquo; and &ldquo;&gt;", however I decided not to as my reading suggested that escaping characters is the most comprehensive defence against XSS attacks.</p>
+<p>In unit 2 we covered the background of UML and the different types of diagrams that can be used at different points of the SDLC. During unit 3 we learned about the history of programming languages, and the difference between compiled and interpreted languages (and the use of hybrid code). My further reading helped me understand the paradigms within the categories of iterative and declarative programming. I also learned about static and dynamic typed languages, and the advantages and disadvantages of these in different situations.</p>
+
+<b><a href="https://jonny-droid.github.io/e-Portfolio/PDFs/activityDiagram.pdf">My update UML available here.</a></b>
+
+
+<p><strong><strong>Bibliography</strong></strong></p>
+<p>Cifuentes, C. &amp; Bierman, G. (2019) What is a Secure Programming Language? 3rd Summit on Advances in Programming Languages (SNAPL). 136(3): 1 - 15.</p>
+<p>Lakshmanan, R (2021) Several Malicious Typosquatted Python Libraries Found On PyPI Repository. Available from:&nbsp;<strong><a href="https://thehackernews.com/2021/07/several-malicious-typosquatted-python.html">https://thehackernews.com/2021/07/several-malicious-typosquatted-python.html</a></strong>&nbsp;[access 30th August 2021].</p>
+<p>OWASP (2020) OWASP Top Ten. Available from: https://owasp.org/www-project-top-ten/ [accessed 22nd August 2021]</p>
+<p>Pillai, A.B. (2017)&nbsp;<em>Software Architecture with Python</em>. Birmingham: Packt Publishing Ltd.</p>
