@@ -49,7 +49,8 @@
 									</header>
 <h2>Codio</h2>
 <h3>Buffer overflow?</span></h3>
-This activity was to demontrate how C and Python handle buffer overflow. The code below specifies 8 characters of memory assigned to the input in C.
+This activity was to demontrate how C and Python handle buffer overflow. Buffer overflow in C in a known security risk that needs mitigation (Cifuentes & Bierman, 2019). 
+The code below specifies 8 characters of memory assigned to the input in C.
 <p></p>
 <img src="https://jonny-droid.github.io/e-Portfolio/images/bufferC8.JPG">
 <p></p>
@@ -58,10 +59,11 @@ The below shows what happens if my response is 8 characters (or fewer) in length
 <img src="https://jonny-droid.github.io/e-Portfolio/images/bufferC8Result.JPG">
 <p></p>
 The below shows what happens if my response is over 8 character. The terminal is showing the compiler defending against buffer overflow.
+Without specifying the buffer of 8 characters, the above code would have been vulnerablet to attack.
 <p></p>
 <img src="https://jonny-droid.github.io/e-Portfolio/images/bufferCOver8Result.JPG">
 <p></p>
-The below shows that Python has an inbuilt buffer overflow defence by responding with an error.
+The below shows that Python has an inbuilt buffer overflow defence by responding with an error (as talked about by Pillai, 2017).
 <img src="https://jonny-droid.github.io/e-Portfolio/images/pythonOverflowCode.JPG">
 <p></p>
 <img src="https://jonny-droid.github.io/e-Portfolio/images/pythonOverflowResult.JPG">
@@ -72,7 +74,13 @@ The below shows what happens if the buffer is not exceeded:
 <p></p>
 <img src="https://jonny-droid.github.io/e-Portfolio/images/pythonOverflowResultNew.JPG">
 <p></p>
-In all of the above examples pylint warns against the "Redefining built-in 'buffer'":
+In all of the above examples pylint warns against the "redefining built-in 'buffer'":
 <p></p>
 <img src="https://jonny-droid.github.io/e-Portfolio/images/pylintOverflow.JPG">
 <p></p>
+<b>References</b>
+<p></p>
+Cifuentes, C. & Bierman, G. (2019) What is a Secure Programming Language? 3rd Summit on Advances in Programming Languages (SNAPL).136(3): 1 - 15.
+<p>
+Pillai, A.B. (2017) Software Architecture with Python. Birmingham, UK. Packt Publishing Ltd.
+</p>
