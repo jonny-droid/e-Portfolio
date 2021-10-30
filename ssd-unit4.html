@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+													<li><a href="index.html">Home</a></li>
+							<li><a href="glossary.html">Glossary</a></li>
+							<li><a href="moduleone.html">Launching into Computer Science</a></li>
+							<li><a href="moduletwo.html">Object-oriented Information Systems</a></li>
+							<li><a href="index.html">Secure Software Development</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Artifact for unit 4</h2>
+									</header>
+									<p><strong>Unit 4 artifact</strong></p>
+									<p><strong>1) What is ReDOS and what part do &lsquo;Evil Regex&rsquo; play?</strong></p>
+									<p>Regular Expression Denial of Service is a type of DDOS attack. This exploits a vulnerability in Regex where, if written poorly, 
+										the system can be overwhelmed with an input. Essentially, someone enters an input that takes Regex an extended time to calculate due to a high level of complexity (Weidman, N.D.).</p>
+									<p><strong>2) What are the common problems associated with the use of regex? How can these be mitigated?</strong></p>
+									<p>As mentioned above, ReDOS is a potentially a security issue with regex. This can be mitigated by using an Automatic Checking of 
+										Regular Expressions (ACRE) (Larson, 2018) and using EGRET (a tool which generate regular expressions) (Larson &amp; Kirk, 2016). 
+										Larson and Kirk (2016; 2018) however states that these tools cannot be completely relied upon, as certain bugs were missed, 
+										therefore cannot be a substitute for an experienced developer.</p>
+									<p>Bai et al (2021) describe a way of detecting regular expressions that take an extended time to calculate and sandboxing these.</p>
+									<p><strong>3) How and why could regex be used as part of a security solution?</strong></p>
+									<p>Regex is part of a security solution as it can be used to enforce security standards. For example, it can be used to make sure that passwords of a particular length and have at least one symbol, one uppercase and one lowercase letter. Li (2020) talks about how Regex is used within malware scanning.</p>
+									<p><strong>References</strong></p>
+									<p>Bai, Z., Wang, K., Zhu, H., Cao, Y &amp; Jin, X. (2021) Runtime Recovery of Web Applications under Zero-Day ReDoS Attacks.&nbsp;
+										<em>IEEE</em><em>:</em> 1575-1588. DOI: 10.1109/SP40001.2021.00077.</p>
+									<p>Larson, E. (2018) &lsquo;[Research Paper] Automatic Checking of Regular Expressions&rsquo;, <em>IEEE 18th International Working Conference on 
+										Source Code Analysis and Manipulation (SCAM)</em>. Madrid, Spain. 23-24 September 2018. IEEE. 225-234.</p>
+									<p>Larson, E. &amp; Kirk, A. (2016) &lsquo;Generating Evil Test Strings for Regular Expressions&rsquo;, 
+										<em>IEEE International Conference on Software Testing, Verification and Validation (ICST)</em>. Chicago, USA. 11-15 April 2016. IEEE. 309-319.</p>
+									<p>Li, V. (2020) <em>Regular Expressions: A Quick Intro for Security Professionals</em>. 
+										Available from: https://dzone.com/articles/regular-expressions-a-quick-intro-for-security-pro [accessed 30th October 2021].</p>
+									<p>Weidman, A. (N.D.) <em>Regular expression Denial of Service &ndash; ReDoS</em>. 
+										Available from: https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS [accessed 30th October 2021].</p>
