@@ -6,6 +6,36 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  color: black;
+  padding: 0 18px;
+  background-color: rgba(252, 252, 252, 0.863);
+  display: none;
+  overflow: hidden;
+}
+	</style>
+	
+	
 	</head>
 	<body class="is-preload">
 
@@ -47,16 +77,54 @@
 									<header class="major">
 										<h2>Artifact for unit 6</h2>
 									</header>
-									<div class="row">
-									<div class = column 1>
-									
-									<img src="https://jonny-droid.github.io/e-Portfolio/images/pylintCode.JPG">
-									<img src="https://jonny-droid.github.io/e-Portfolio/images/pylintCodeUpdated.JPG">
-									</div>
-									<div class = column 2>
-										<img src="https://jonny-droid.github.io/e-Portfolio/images/pylintOutput.JPG">
-										<img src="https://jonny-droid.github.io/e-Portfolio/images/pylintOutputUpdated.JPG">
-									
 
+Pylint checks for coding standards and code smells (Pylint, N.D.).
+Please see the dropdown boxes below for my artificat for unit 6.
+<p></p>
+
+									
+<button class="accordion">Pylint</button>
+<div class="panel">
+Here is the original pylint test file (pylintTest). This gives the code a low rating (-2.63/10)
+and lists many suggestions for improvement.
+<p></p>
+	<img src="https://jonny-droid.github.io/e-Portfolio/images/pylintCode.JPG">
+	<img src="https://jonny-droid.github.io/e-Portfolio/images/pylintOutput.JPG">
 </div>
+<button class="accordion">Updated Pylint</button>
+<div class="panel">
+	<p></p>
+Here is the updated code. I have corrected the bad intentions (where the wrong number of spaces were used).
+I also put everything inside a function, as otherwise Pylint things the variables are constants.
+I also got rid of inappropriate whitespace. There are some errors remaining, as I disagree with Pylint
+that print should not have parentheses, that a break should be included and that "x" is an inappropriate variable name.
+I also changed "raw_input" to "input" as I am using Python3 rather than Python2.
+<p></p>
+	<img src="https://jonny-droid.github.io/e-Portfolio/images/pylintCodeUpdated.JPG">
+	<img src="https://jonny-droid.github.io/e-Portfolio/images/pylintOutputUpdated.JPG">
 </div>
+<p></p>
+<h3>References</h3>
+Pylint. (N.D) <i>User Manual</i>. Available from: https://pylint.pycqa.org/en/latest/ [accessed 1st October 2021]
+
+<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+	
+	for (i = 0; i < acc.length; i++) {
+	  acc[i].addEventListener("click", function() {
+		/* Toggle between adding and removing the "active" class,
+		to highlight the button that controls the panel */
+		this.classList.toggle("active");
+	
+		/* Toggle between hiding and showing the active panel */
+		var panel = this.nextElementSibling;
+		if (panel.style.display === "block") {
+		  panel.style.display = "none";
+		} else {
+		  panel.style.display = "block";
+		}
+	  });
+	}
+	
+		</script>
