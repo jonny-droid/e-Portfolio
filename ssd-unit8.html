@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+													<li><a href="index.html">Home</a></li>
+							<li><a href="glossary.html">Glossary</a></li>
+							<li><a href="moduleone.html">Launching into Computer Science</a></li>
+							<li><a href="moduletwo.html">Object-oriented Information Systems</a></li>
+							<li><a href="index.html">Secure Software Development</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Artifact for units 8, 9 and 10: Truecrypt collaborative discussion</h2>
+										</header>
+<h2>Initial post</h2>
+TrueCrypt’s website indicates that there are security flaws in the system, informing the viewer that it is no longer 
+supported and alternative should be used (TrueCrypt, nd). Isec Partners (Junestam and Guido, 2014) 
+conducted a cryptoanalysis and found issues which they categorised as medium, low or insignificant in severity. Of note, no backdoors or malicious code were found. The issue of poor 
+maintainability was highlighted, due to issues with code quality (for example overly long functions and a lack of commenting). Overall, I would sum up Isec’s report as inconclusive.
+<p></p>
+From looking at the literature I could not find any examples of TrueCrypt data being unencrypted 
+even by government agencies with vast resources, for example the FBI.
+<p></p>
+In terms of recommending TrueCrypt to a friend, I would not do this as there is other open-source 
+encryption software that are still supported, for example VeraCrypt (a successor of TrueCrypt) (VeraCrypt, nd). If my friend uses Linux or Mac OS then I would recommend 
+that they consider using LUKS (to encrypt a whole partition) or FileVault respectively (Ocenas et al, 2020). If my friend was running Windows Enterprise or Pro they could use BitLocker.
+<p></p>
+In terms of caveats, I would recommend to my friend that the choice of encryption software is not 
+the only issue that they should think about. They need to use a long and complex password to prevent dictionary attacks 
+(as discussed by Parish et al (2021)), this means thinking about a minimum number of characters, including uppercase and lowercase letters, numbers, spaces, and special characters, 
+without easily guessed phrases. They should also not use the same password on another system. I would also recommend that my friend is conscious of not jeopardising their computer through malware and that they use anti-virus software, as for example a keystroke logging programme could be used to obtain their password (Tuscano and Koshy, 2021).
+
+
+<p></p>
+<h2>Reply 1: Cathryn</h2>
+It's very interesting that you consider the caveats here, Jonathan, and not simply a black or white yes or no. 
+You very suitably note that careful password design is also important, regardless of the software decision that they make. Well done. 
+<p></p>
+<h2>Reply 2: Shan</h2>
+I enjoyed reading this post- you raised some good points. 
+The recommendations made highlight the importance of building a good threat model, but more importantly, 
+understanding the audience of the system that you are trying to consider- in this case, an individual. 
+Although there are plenty of good resources available for creating a threat model, such as the guide from OWASP (2021), they primarily caters to business applications. 
+Individuals can apply some steps from the aforementioned guide, such as identifying threat agents, enumerating possible attacks through creating diagrams, 
+and creating adequate countermeasures. However, these steps might be difficult to navigate for a non-technical person. Simplifying the steps could make them more accessible, 
+however, simplicity might lead to less security due to the removal of detail. Do you think that simplifying these guides for a wider audience could still be beneficial?
+<p></p>
+With regards to the idea of preventing malware through being conscious, it could be said that it's easy to implement in practice. One way of looking at it is to view it as building a habit- for instance, an end user might always check the domain name of a website/the presence of HTTPS when entering sensitive information. On the other hand, this might be a fundamentally incomplete approach: Rahman et al. (2021) note that the majority of existing literature on cybersecurity views humans as a "problem", rather than a "solution". This is because security often comes at the cost of ease-of-use, and individuals typically prefer ease-of-use so security cannot be completely favored. If humans were to be viewed as a solution in the context of creating a secure storage environment, what do you think the outcome of that would be?
+
+<p></p>
+<h2>Reply 3: Hendrik</h2>
+I really enjoyed you touching on the password subject, as this is something that is common sense, but not always common practise. According to NCSC (2019), 
+23.3 million victim accounts worldwide used 123456 as a password. A good starting point may be to use a password generator tool and be sure your password is at the very least, 
+not in the top 100k PwnedPasswords list (NCSC, n.d.).
+
+<p></p>
+<h2>My reply</h2>
+<p></p>
+Many thanks, Shan and Henrik for your thoughtful replies.
+
+I agree completely with your point, Shan, that many of the recommendations are catered towards businesses and technical people, rather than everyday users, 
+and that that the "human problem" with digital security can often come from non-technical users. I agree that it's a good idea to get people in the habit of 
+making good decisions regarding security. 
+This leads on to Hendrik's point about using password generators to make sure people do not use too simplistic passwords
+<p></p>
+<h2>Bibliography for the whole discussion</h2>
+<p></p>
+Junestam, A. & Guigo, N. (2014) Open Crypto Audit Project Truecrypt Security Assessment. Available at: http://truecrypt.sourceforge.net/ [accessed 4th October 2021].
+<p></p>
+National Cyber Security Centre. (2019) Most hacked passwords revealed as UK cyber survey exposes gaps in online security. 
+Available from: https://www.ncsc.gov.uk/news/most-hacked-passwords-revealed-as-uk-cyber-survey-exposes-gaps-in-online-security [Accessed 13 October 2021].
+<p></p>
+National Cyber Security Centre. (n.d.) Available from: https://www.ncsc.gov.uk/static-assets/documents/PwnedPasswordsTop100k.txt [Accessed 13 October 2021].
+</p>				
+Ocenas, M., Homoliak, I., Hanacek, P. & Malinka, K. (2020) ‘Security and Encryption at Modern Databases’, Proceedings of the 2020 4th International Conference on Cryptography, Security and Privacy (ICCSP 2020). New York: Association for Computing Machinery. DOI: https://doi.org/10.1145/3377644.3377662.
+<p></p>
+OWASP. (2021) Threat Modeling Cheat Sheet. Available from: https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html [Accessed 12 October 2021].
+<p></p>										
+Parish, Z., Cushing, C., Aggarwal, S. & Thorpe, J. (2021) Password guessers under a microscope: an in-depth analysis to inform deployments. International Journal of Information Security. DOI: https://doi.org/10.1007/s10207-021-00560-9.
+<p></p>
+Rahman, T., Rohan, R., Pal, D. & Kanthamanon, P. (2021) 'Human Factors in Cybersecurity: A Scoping Review', 
+12th International Conference on Advances in Information Technology (IAIT2021). Bangkok, Thailand, 29 June - 1 July. New York: Association for Computing Machinery. 1–11.
+<p></p>										
+TrueCrypt. (n.d.) Homepage. Available at: http://truecrypt.sourceforge.net/ [accessed on 1st October 2021].
+<p></p>										
+Tuscano A. & Koshy T.S. (2021) Types of Keyloggers Technologies – Survey. ICCCE 698. DOI: https://doi.org/10.1007/978-981-15-7961-5_2.
+<p></p>										
+VeraCrypt. (n.d.) About. Available at: https://www.veracrypt.fr/code/VeraCrypt/about/ [accessed 5th October 2021].
