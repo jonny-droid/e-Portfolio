@@ -6,6 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+			function goBack() {
+			  window.history.back();
+			}
+			</script>
+			
 	</head>
 	<body class="is-preload">
 
@@ -74,3 +80,5 @@
 <p>&nbsp;</p>
 <p>Could use some type of compiler to convert Python into assembly language (we were not sure if this would this would just convert Python to C). Python might be a better language when someone need to develop an operating system quickly without need for performance, or does not know C.</p>
 <p>We discussed the use of Safety (a package to scan for threats in external libraries) and bandit&nbsp;scans your code for well-known vulnerabilities (a type of security linter).</p>
+<button onclick="goBack()">Go Back</button>
+</body>
