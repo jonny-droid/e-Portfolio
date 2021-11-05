@@ -6,6 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+			function goBack() {
+			  window.history.back();
+			}
+			</script>
 	</head>
 	<body class="is-preload">
 
@@ -52,12 +57,14 @@
 During this module I was introduced to OWASPS Top 10 Web Application Security Risks. Although I was previously aware of these, by thinking about how
 our group application mitigated each of these threats in turn, made me understand the proactive steps needed. One example of this was mitigating against A03:2021-Injection.
 We were cautious any time there was an input into our system from a user. Therefore we put the following into place:
+</p>
 <ul>
 <li>For image uploads we restricted these to only the following file types: .jpg, .jpeg, .png, and .gif. This avoided any injection through executable files</li>
 <li>We limited the size of the file to mitigate against DDOS attacks (for example uploading files with extremely large amounts of data)</li>
 <li>We needed to be confident that input boxes escaped characters, so we used SQLAlchemy due to its built in methods for this (among other reasons, such as working well with our MVC pattern)</li>
 </ul>
 I did further details into particular security areas:
+</p>
 <ul>
 <li><a href="ssd-unit1.html">Writing a discussion post on cross-site scripting.</a></li>
 <li><a href="ssd-unit2.html">Writing a a blog post on managing security risks</a></li>
@@ -77,21 +84,27 @@ To help ensure this we learned about:
 Patterns and anti-patterns in unit 3, and implemented this in our group project through using the MVC pattern.
 We also tried to avoid spaghetti code.
 <p>
+<p>
+We used UML and entity relationship diagrams as part of our deisgn proposal to ensure good planning.
+</p>
+
+
 To ensure good coding practices, maintenability and readability we learned about Linters. In our group project we used PyLint and Flake8.
 This informed us that we were missing module docstring (not commenting at the top of each file) and missing various function and class comments. 
 Please note, at this point we were running short of time and in future would have implemented linting during our development.
 </p>
-
-UML
-cli (artifact)
-api (artifact)
-Cryptography (artifact + my diagram)
-Linters
-Testing
+We developed both white-box and black-box testing for our system, having learned about these in unit 5.
 <p></p>
 <h3>Design and develop/adapt computer programs and to produce a solution that meets the design brief and critically evaluate solutions that are produced.</h3>
 Courework
 <p></p>
+During the course I created small applications, usch as a CLI and API.
+Teamwork
+
+Cryptography (artifact + my diagram)
+
+
+
 <h3>Systematically develop and implement the skills required to be effective member of a development team in a virtual professional 
     environment, adopting real-life perspectives on team roles and organisation.</h3>
 Teamwork document
@@ -105,9 +118,7 @@ OWASP
 </div>
 							</section>
 
-						
 
-		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -116,5 +127,6 @@ OWASP
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+<button onclick="goBack()">Back</button>
 	</body>
 </html>
