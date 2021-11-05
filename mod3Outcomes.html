@@ -49,7 +49,26 @@
 									</header>
 									<p>
 <h3>Identify and manage security risks as part of a software development project.</h3>
-During this module I was introduced to OWASPS Top 10 Web Application Security Risks....
+During this module I was introduced to OWASPS Top 10 Web Application Security Risks. Although I was previously aware of these, by thinking about how
+our group application mitigated each of these threats in turn, made me understand the proactive steps needed. One example of this was mitigating against A03:2021-Injection.
+We were cautious any time there was an input into our system from a user. Therefore we put the following into place:
+<ul>
+<li>For image uploads we restricted these to only the following file types: .jpg, .jpeg, .png, and .gif. This avoided any injection through executable files</li>
+<li>We limited the size of the file to mitigate against DDOS attacks (for example uploading files with extremely large amounts of data)</li>
+<li>We needed to be confident that input boxes escaped characters, so we used SQLAlchemy due to its built in methods for this (among other reasons, such as working well with our MVC pattern)</li>
+</ul>
+I did further details into particular security areas:
+<ul>
+<li><a href="ssd-unit1.html">writing a discussion post on cross-site scripting</a></li>
+<li><a href="ssd-unit2.html">writing a a blog post on managing security risks</a></li>
+<li>The particular risks, and mitigations, associated with each programming language (looking particulary at C and Python). 
+	<a href="ssd-unit3.html">This took the form of a team discussion</a></li> and a <a href="ssd-unit3BufferOverflow.html">programming activity on buffer overflows</a></li>
+<li><a href="ssd-unit4.html">ReDoS (a form of DDOS attack exploiting Regex vulnerabilities)</a></li>
+<li><a href="ssd-unit8.html">Cryptography</a></li>
+<li></li>
+</ul> 
+
+
 Team project (design and implementation)
 Realised....
 Particularly cross-site scripting - link to artifact.
