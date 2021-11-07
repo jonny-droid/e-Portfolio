@@ -62,7 +62,7 @@ This can be used to carry out an action or to send data to the hacker (Ambedkar 
 <ul>
 <li>Dom based XSS: attackers add malicious code to a webpage. This is a client-side attack. Dora and Nemoga (2021) state that some authors regard this as a type of reflected attack, 
 however it does not include any data being sent to the server.</li>
-<li>Stored/persistent XSS: attackers store malicious code on a website&rsquo;s database. This is often accomplished through a search field, with a hacker adding 
+<li>Stored/persistent XSS: attackers store malicious code on a website's database. This is often accomplished through a search field, with a hacker adding 
 Javascript/HTML into a search box or form. This is a server-side attack.</li>
 </ul>
 <p>Rodriguez et al (2020) list some methods to prevent cross-site scripting:</p>
@@ -70,7 +70,7 @@ Javascript/HTML into a search box or form. This is a server-side attack.</li>
 <li>Blacklist certain user inputs, for example &ldquo;&lt;&rdquo; and &ldquo;&gt;&rdquo;</li>
 <li>Escaping characters so code is interpreted as text and not run.</li>
 <li>Using open sources XSS libraries.</li>
-<li>Tools exist that can be used to automatically detect cross site scripting vulnerabilities (OWAST 2021). OWAST lists nine of these.</li>
+<li>Tools exist that can be used to automatically detect cross site scripting vulnerabilities (OWASP 2021). OWASP lists nine of these.</li>
 </ul>
 <b><a href="https://jonny-droid.github.io/e-Portfolio/PDFs/activityDiagram.pdf">My UML is  available here.</a></b>
 
@@ -85,8 +85,10 @@ Javascript/HTML into a search box or form. This is a server-side attack.</li>
 
 
 <h2>My Summary post</h2>
-<p>During the first unit we covered the Software Development Lifecycle (SDLC), the difference between architecture and design (including reference to TOGAF), predictive (waterfall) and adaptive (agile) software methodologies, and we looked at some of the relevant standardisation bodies. OWASP&rsquo;s top ten security vulnerabilities for web applications were explored. I wrote my initial post based on OWASP (2020) A1:2007-injection and A7:2007- Cross-Site Scripting XSS (focussing on cross-site scripting attacks (XSS)). I had some valuable feedback stating that one potential solution to XSS attacks (using open source XSS libraries) can also come with security threats. This could mean the packages themselves execute malicious script (there is often a lack of moderation within software language libraries) (Lakshmanan, 2021).</p>
-<p>I also received useful feedback on my UML. Where I had a decision box stating &ldquo;the website has a way to mitigate threats, for example escaping character&rdquo;, I would better to use a more definitive questions such as &ldquo;does the website use escaping character?&rdquo;. The former statement leaves an open-ended number of potential methods of mitigation and lacks detail. This made me think that I could add another decision box asking if the web application blacklists certain characters such as &ldquo;&lt;&rdquo; and &ldquo;&gt;", however I decided not to as my reading suggested that escaping characters is the most comprehensive defence against XSS attacks.</p>
+<p>During the first unit we covered the Software Development Lifecycle (SDLC), the difference between architecture and design (including reference to TOGAF), predictive (waterfall) and adaptive (agile) software methodologies, and we looked at some of the relevant standardisation bodies. 
+	OWASP's top ten security vulnerabilities for web applications were explored. I wrote my initial post based on OWASP (2020) A1:2007-injection and A7:2007- Cross-Site Scripting XSS (focussing on cross-site scripting attacks (XSS)). I had some valuable feedback stating that one potential solution to XSS 
+	attacks (using open source XSS libraries) can also come with security threats. This could mean the packages themselves execute malicious script (there is often a lack of moderation within software language libraries) (Lakshmanan, 2021).</p>
+<p>I also received useful feedback on my UML. Where I had a decision box stating &ldquo;the website has a way to mitigate threats, for example escaping character&rdquo;, I would be better to use a more definitive question such as &ldquo;does the website use escaping character?&rdquo;. The former statement leaves an open-ended number of potential methods of mitigation and lacks detail. This made me think that I could add another decision box asking if the web application blacklists certain characters such as &ldquo;&lt;&rdquo; and &ldquo;&gt;", however I decided not to as my reading suggested that escaping characters is the most comprehensive defence against XSS attacks.</p>
 <p>In unit 2 we covered the background of UML and the different types of diagrams that can be used at different points of the SDLC. During unit 3 we learned about the history of programming languages, and the difference between compiled and interpreted languages (and the use of hybrid code). My further reading helped me understand the paradigms within the categories of iterative and declarative programming. I also learned about static and dynamic typed languages, and the advantages and disadvantages of these in different situations.</p>
 
 <b><a href="https://jonny-droid.github.io/e-Portfolio/PDFs/updatedActivityDiagram.pdf">My update UML available here.</a></b>
