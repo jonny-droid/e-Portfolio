@@ -63,7 +63,7 @@
 <p><strong>Console vulnerabilities</strong></p>
 <p>Python 2 had certain vulnerabilities that Python 3 fixed. Python 3 converts inputs to strings. However, Python 2 does an eval() meaning that it executes a command for the input. This can be gotten around by using <em>raw_input</em>.</p>
 <p><strong>Buffer overflow attack</strong></p>
-<p>Buffer overflow &ndash; where data exceeds the amount of allocated memory to a specific point is caused when the application fails to check for the length of the input. Boundary checking on variable-length input helps to mitigate this. C and C++ are particularly vulnerable to this as their functions do not effectively check for boundaries.</p>
+<p>Buffer overflow &ndash; where data exceeds the amount of allocated memory to a specific point. It is caused when the application fails to check for the length of the input. Boundary checking on variable-length input helps to mitigate this. C and C++ are particularly vulnerable to this as their functions do not effectively check for boundaries.</p>
 <p>A buffer is a temporary data storage area that has a limited space allocated for any single task. Programming should be written with error checking to make sure that the buffer receives the right type and right amount of data.</p>
 <p>A buffer overflow occurs when an input given to an application exceeds the allocated buffer memory. The input is accepted and overwrites other data, crashes the program or can be used for data leakage.</p>
 <p>Python3 is better than Python2 for manging memory and returning errors.</p>
